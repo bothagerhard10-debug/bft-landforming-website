@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Scraper action placeholder</title>
+  <desc id="desc">Placeholder graphic for the scraper moving soil image.</desc>
+  <defs>
+    <linearGradient id="dust" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7d6a5b" />
+      <stop offset="100%" stop-color="#c1a187" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#dust)" />
+  <path d="M0 170h1600v730H0z" fill="#876a57" />
+  <path d="M650 220l170 45 50 120-60 220-165 80-140-75-35-180 80-185z" fill="#d32f2f" />
+  <path d="M850 420l320 45 140 40 90 85-25 40-170-30-310-55z" fill="#bcb2a4" />
+  <circle cx="650" cy="670" r="65" fill="#1a1a1a" />
+  <circle cx="1120" cy="650" r="48" fill="#1a1a1a" />
+  <path d="M1100 250c65 40 120 120 160 210-80-45-150-40-205-10 0-80 5-145 45-200z" fill="#d7c0a7" fill-opacity=".75" />
+  <text x="110" y="135" fill="#ffffff" font-family="Oswald, Arial Narrow, sans-serif" font-size="86" font-weight="700">
+    SOIL MOVEMENT
+  </text>
+  <text x="110" y="220" fill="#ffffff" font-family="Barlow, Arial, sans-serif" font-size="34">
+    Replace with uploaded scraper action photo
+  </text>
+  <text x="1050" y="815" fill="#ffffff" font-family="Oswald, Arial Narrow, sans-serif" font-size="72" font-weight="700">
+    60m³ / HOUR
+  </text>
+</svg>

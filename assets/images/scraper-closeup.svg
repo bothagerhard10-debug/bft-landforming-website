@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Scraper close-up placeholder</title>
+  <desc id="desc">Placeholder graphic for the ErdVark scraper close-up image.</desc>
+  <rect width="1600" height="900" fill="#c9d9ee" />
+  <rect y="560" width="1600" height="340" fill="#b08e67" />
+  <rect x="210" y="220" width="1040" height="120" rx="28" fill="#b6b1a4" />
+  <rect x="420" y="320" width="540" height="260" rx="36" fill="#b8b1a3" />
+  <rect x="500" y="360" width="420" height="150" rx="20" fill="#8f8577" />
+  <rect x="810" y="320" width="180" height="70" rx="14" fill="#783425" />
+  <text x="110" y="130" fill="#111111" font-family="Oswald, Arial Narrow, sans-serif" font-size="82" font-weight="700">
+    ERDVARK FCT 4000
+  </text>
+  <text x="110" y="210" fill="#111111" font-family="Barlow, Arial, sans-serif" font-size="34">
+    Replace with uploaded scraper close-up photo
+  </text>
+</svg>

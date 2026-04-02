@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tracks close-up placeholder</title>
+  <desc id="desc">Placeholder graphic for the tracked tractor close-up image.</desc>
+  <rect width="1600" height="900" fill="#93b3d6" />
+  <rect y="570" width="1600" height="330" fill="#957555" />
+  <rect x="720" y="110" width="540" height="250" rx="40" fill="#d32f2f" />
+  <ellipse cx="970" cy="610" rx="350" ry="150" fill="#1b1b1b" />
+  <ellipse cx="970" cy="610" rx="260" ry="90" fill="#2d2d2d" />
+  <circle cx="770" cy="610" r="42" fill="#8d8d8d" />
+  <circle cx="920" cy="610" r="42" fill="#8d8d8d" />
+  <circle cx="1070" cy="610" r="42" fill="#8d8d8d" />
+  <circle cx="1220" cy="610" r="42" fill="#8d8d8d" />
+  <text x="110" y="130" fill="#111111" font-family="Oswald, Arial Narrow, sans-serif" font-size="82" font-weight="700">
+    TRACKS + TRACTION
+  </text>
+  <text x="110" y="210" fill="#111111" font-family="Barlow, Arial, sans-serif" font-size="34">
+    Replace with uploaded tracks close-up photo
+  </text>
+</svg>
