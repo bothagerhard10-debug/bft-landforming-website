@@ -2,6 +2,7 @@
 
 The website is wired to these image filenames:
 
+- `brand-logo.svg`: default logo used in the header and footer
 - `hero-tractor.svg`: main tractor with scraper hero image
 - `gps-rtk.svg`: RTK GPS close-up
 - `scraper-action.svg`: scraper moving soil
@@ -13,6 +14,9 @@ The website is wired to these image filenames:
 - `process-landform.svg`: Step 3 landform image
 
 Current files are lightweight SVG placeholders so the site renders immediately.
+
+The Firebase admin panel can replace these with uploaded images at runtime once
+`assets/js/firebase-config.js` is connected to a real Firebase project.
 
 To swap in the real uploaded photos:
 

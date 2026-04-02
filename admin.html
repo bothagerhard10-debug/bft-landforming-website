@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BFT Admin | Firebase Media Manager</title>
+    <meta
+      name="description"
+      content="Private BFT Landforming admin dashboard for managing logos, website photos, and quote requests."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="admin" class="admin-body">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header admin-header">
+      <div class="container header-shell">
+        <a class="brand" href="index.html" aria-label="Back to BFT website">
+          <img
+            class="brand-logo"
+            src="assets/images/brand-logo.svg"
+            alt="BFT Landforming logo"
+          />
+          <span class="brand-lockup">
+            <strong>BFT Boerdery</strong>
+            <span>Admin Dashboard</span>
+          </span>
+        </a>
+
+        <div class="admin-header__actions">
+          <span class="admin-account-badge" data-account-email>Signed out</span>
+          <button class="button button--small" type="button" data-sign-out>Sign Out</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content" class="admin-main">
+      <section class="section section--light admin-section">
+        <div class="container admin-grid">
+          <div class="admin-panel admin-panel--notice is-hidden" data-config-notice>
+            <p class="eyebrow">Setup Required</p>
+            <h1>Firebase config is still using placeholders.</h1>
+            <p>
+              Add your Firebase web app keys in <code>assets/js/firebase-config.js</code>, then
+              enable Auth, Firestore, Storage, and Hosting.
+            </p>
+          </div>
+
+          <section class="admin-panel" data-admin-login>
+            <p class="eyebrow">Admin Access</p>
+            <h1>Sign in to manage photos, logos, and quote requests.</h1>
+            <p>
+              Use the Firebase Authentication email/password account that is registered as an admin
+              in Firestore.
+            </p>
+
+            <form class="admin-login-form" data-login-form>
+              <label class="admin-field">
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+              <label class="admin-field">
+                <span>Password</span>
+                <input type="password" name="password" autocomplete="current-password" required />
+              </label>
+              <button class="button" type="submit">Sign In</button>
+              <p class="form-status" data-login-status aria-live="polite"></p>
+            </form>
+          </section>
+
+          <section class="admin-dashboard is-hidden" data-admin-dashboard>
+            <div class="admin-dashboard__intro">
+              <div>
+                <p class="eyebrow">Media Manager</p>
+                <h1>Upload the site images that should go live.</h1>
+                <p>
+                  Each upload goes to Firebase Storage and updates the public website through
+                  Firestore media slots.
+                </p>
+              </div>
+              <p class="form-status" data-dashboard-status aria-live="polite"></p>
+            </div>
+
+            <div class="admin-media-grid" data-media-grid></div>
+
+            <section class="admin-panel admin-panel--submissions">
+              <p class="eyebrow">Quote Requests</p>
+              <h2>Contact form submissions</h2>
+              <div class="quote-list" data-quote-list>
+                <article class="admin-empty-state">
+                  <h3>Waiting for submissions</h3>
+                  <p>New quote requests will appear here after the contact form is used.</p>
+                </article>
+              </div>
+            </section>
+
+            <section class="admin-panel admin-panel--help">
+              <p class="eyebrow">Checklist</p>
+              <h2>Before you go live</h2>
+              <ul class="simple-list">
+                <li>Paste your Firebase web config into <code>assets/js/firebase-config.js</code></li>
+                <li>Enable Email/Password sign-in in Firebase Authentication</li>
+                <li>Create your admin user in Auth</li>
+                <li>Create Firestore document <code>admins/YOUR_UID</code></li>
+                <li>Deploy Hosting, Firestore rules, and Storage rules</li>
+              </ul>
+            </section>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <div class="footer-brand">
+          <img
+            class="footer-brand__logo"
+            src="assets/images/brand-logo.svg"
+            alt="BFT Landforming logo"
+          />
+          <p>Private admin page for managing BFT website content and quote requests.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Public Site</a>
+          <a href="contact.html">Contact Page</a>
+          <a href="FIREBASE_SETUP.md">Firebase Setup</a>
+        </div>
+        <div class="footer-contact">
+          <a href="mailto:bftboerderylandforming@gmail.com">bftboerderylandforming@gmail.com</a>
+          <span>Firebase-backed media and submissions dashboard</span>
+        </div>
+      </div>
+      <div class="container footer-meta">
+        <p>&copy; <span data-current-year></span> BFT Boerdery Landforming</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/site.js" defer></script>
+    <script type="module" src="assets/js/admin.js"></script>
+  </body>
+</html>

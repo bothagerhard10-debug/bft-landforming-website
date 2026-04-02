@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">BFT Landforming logo</title>
+  <desc id="desc">Bold BFT Landforming wordmark used as the default website logo.</desc>
+  <rect width="1200" height="420" fill="#ffffff" />
+  <text
+    x="110"
+    y="220"
+    fill="#d32f2f"
+    font-family="Oswald, Arial Narrow, sans-serif"
+    font-size="240"
+    font-weight="700"
+    letter-spacing="8"
+  >
+    BFT
+  </text>
+  <text
+    x="110"
+    y="340"
+    fill="#111111"
+    font-family="Oswald, Arial Narrow, sans-serif"
+    font-size="132"
+    font-weight="700"
+  >
+    Landforming
+  </text>
+</svg>

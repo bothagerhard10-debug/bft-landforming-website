@@ -25,8 +25,13 @@
     <header class="site-header">
       <div class="container header-shell">
         <a class="brand" href="index.html" aria-label="BFT Boerdery Landforming home">
-          <span class="brand-mark">BFT</span>
-          <span class="brand-text">
+          <img
+            class="brand-logo"
+            src="assets/images/brand-logo.svg"
+            alt="BFT Landforming logo"
+            data-media-slot="brandLogo"
+          />
+          <span class="brand-lockup">
             <strong>BFT Boerdery</strong>
             <span>Landforming</span>
           </span>
@@ -60,6 +65,7 @@
           class="page-hero__media"
           src="assets/images/process-landform.svg"
           alt="Landforming machinery shaping a field"
+          data-media-slot="processLandform"
           fetchpriority="high"
         />
         <div class="page-hero__overlay"></div>
@@ -92,6 +98,7 @@
             <img
               src="assets/images/hero-tractor.svg"
               alt="Tractor and scraper setup for landforming"
+              data-media-slot="homeHero"
               loading="lazy"
               decoding="async"
             />
@@ -134,6 +141,7 @@
         <img
           src="assets/images/scraper-action.svg"
           alt="Scraper in operation moving soil during landforming"
+          data-media-slot="scraperAction"
           loading="lazy"
           decoding="async"
         />
@@ -158,6 +166,7 @@
               <img
                 src="assets/images/process-survey.svg"
                 alt="Survey image for landforming planning"
+                data-media-slot="processSurvey"
                 loading="lazy"
                 decoding="async"
               />
@@ -174,6 +183,7 @@
               <img
                 src="assets/images/process-design.svg"
                 alt="Design stage using laptop and field software"
+                data-media-slot="processDesign"
                 loading="lazy"
                 decoding="async"
               />
@@ -190,6 +200,7 @@
               <img
                 src="assets/images/tracks-closeup.svg"
                 alt="Tracked tractor detail for landforming work"
+                data-media-slot="tracksCloseup"
                 loading="lazy"
                 decoding="async"
               />
@@ -236,6 +247,7 @@
             <img
               src="assets/images/gps-rtk.svg"
               alt="Close-up of Trimble RTK GPS equipment"
+              data-media-slot="gpsRtk"
               loading="lazy"
               decoding="async"
             />
@@ -256,7 +268,13 @@
 
     <footer class="site-footer">
       <div class="container footer-shell">
-        <div>
+        <div class="footer-brand">
+          <img
+            class="footer-brand__logo"
+            src="assets/images/brand-logo.svg"
+            alt="BFT Landforming logo"
+            data-media-slot="brandLogo"
+          />
           <strong>BFT Boerdery Landforming</strong>
           <p>Precision landforming and leveling with RTK GPS technology.</p>
         </div>
@@ -287,5 +305,6 @@
     </a>
 
     <script src="assets/js/site.js" defer></script>
+    <script type="module" src="assets/js/site-media.js"></script>
   </body>
 </html>

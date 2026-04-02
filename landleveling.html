@@ -25,8 +25,13 @@
     <header class="site-header">
       <div class="container header-shell">
         <a class="brand" href="index.html" aria-label="BFT Boerdery Landforming home">
-          <span class="brand-mark">BFT</span>
-          <span class="brand-text">
+          <img
+            class="brand-logo"
+            src="assets/images/brand-logo.svg"
+            alt="BFT Landforming logo"
+            data-media-slot="brandLogo"
+          />
+          <span class="brand-lockup">
             <strong>BFT Boerdery</strong>
             <span>Landforming</span>
           </span>
@@ -60,6 +65,7 @@
           class="page-hero__media"
           src="assets/images/gps-rtk.svg"
           alt="RTK GPS equipment used for land leveling"
+          data-media-slot="gpsRtk"
           fetchpriority="high"
         />
         <div class="page-hero__overlay"></div>
@@ -92,6 +98,7 @@
             <img
               src="assets/images/tractor-topdown.svg"
               alt="Aerial machinery view showing precise field lines"
+              data-media-slot="tractorTopdown"
               loading="lazy"
               decoding="async"
             />
@@ -189,6 +196,7 @@
             <img
               src="assets/images/scraper-action.svg"
               alt="Scraper grading a field with controlled passes"
+              data-media-slot="scraperAction"
               loading="lazy"
               decoding="async"
             />
@@ -200,6 +208,7 @@
         <img
           src="assets/images/tracks-closeup.svg"
           alt="Tracked tractor close-up showing heavy-duty field traction"
+          data-media-slot="tracksCloseup"
           loading="lazy"
           decoding="async"
         />
@@ -226,7 +235,13 @@
 
     <footer class="site-footer">
       <div class="container footer-shell">
-        <div>
+        <div class="footer-brand">
+          <img
+            class="footer-brand__logo"
+            src="assets/images/brand-logo.svg"
+            alt="BFT Landforming logo"
+            data-media-slot="brandLogo"
+          />
           <strong>BFT Boerdery Landforming</strong>
           <p>Precision landforming and leveling with RTK GPS technology.</p>
         </div>
@@ -257,5 +272,6 @@
     </a>
 
     <script src="assets/js/site.js" defer></script>
+    <script type="module" src="assets/js/site-media.js"></script>
   </body>
 </html>
