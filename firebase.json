@@ -7,7 +7,7 @@
     "rules": "storage.rules"
   },
   "hosting": {
-    "public": ".",
+    "public": "public_html",
     "cleanUrls": true,
     "ignore": [
       "firebase.json",
@@ -15,9 +15,11 @@
       "firestore.indexes.json",
       "storage.rules",
       ".firebaserc",
+      ".htaccess",
       ".git/**",
       "preview-server.js",
       "FIREBASE_SETUP.md",
+      "public_html.zip",
       "**/node_modules/**"
     ],
     "headers": [
