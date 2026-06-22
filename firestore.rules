@@ -15,13 +15,53 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
+    match /siteStats/performance {
+      allow read: if true;
+
+      allow create, update: if isAdmin() &&
+        request.resource.data.keys().hasOnly([
+          "landformingHours",
+          "hectaresCompleted",
+          "hectaresDesigned",
+          "zarPerHectare",
+          "fuelPerHectare",
+          "landLevelingZarPerHectare",
+          "landLevelingFuelPerHectare",
+          "updatedAt",
+          "updatedBy"
+        ]) &&
+        request.resource.data.landformingHours is number &&
+        request.resource.data.hectaresCompleted is number &&
+        request.resource.data.hectaresDesigned is number &&
+        request.resource.data.zarPerHectare is number &&
+        request.resource.data.fuelPerHectare is number &&
+        request.resource.data.landLevelingZarPerHectare is number &&
+        request.resource.data.landLevelingFuelPerHectare is number &&
+        request.resource.data.updatedAt is timestamp &&
+        request.resource.data.updatedBy is string &&
+        request.resource.data.landformingHours >= 0 &&
+        request.resource.data.hectaresCompleted >= 0 &&
+        request.resource.data.hectaresDesigned >= 0 &&
+        request.resource.data.zarPerHectare >= 0 &&
+        request.resource.data.fuelPerHectare >= 0 &&
+        request.resource.data.landLevelingZarPerHectare >= 0 &&
+        request.resource.data.landLevelingFuelPerHectare >= 0;
+
+      allow delete: if isAdmin();
+    }
+
     match /quoteRequests/{requestId} {
       allow create: if request.resource.data.keys().hasOnly([
           "name",
           "phone",
           "email",
+          "preferredContact",
           "farmLocation",
+          "serviceType",
+          "hectares",
+          "fieldProblem",
           "message",
+          "photoNames",
           "page",
           "status",
           "createdAt"
@@ -29,14 +69,20 @@ service cloud.firestore {
         request.resource.data.name is string &&
         request.resource.data.phone is string &&
         request.resource.data.email is string &&
+        request.resource.data.preferredContact is string &&
         request.resource.data.farmLocation is string &&
+        request.resource.data.serviceType is string &&
+        request.resource.data.hectares is string &&
+        request.resource.data.fieldProblem is string &&
         request.resource.data.message is string &&
+        request.resource.data.photoNames is list &&
         request.resource.data.page is string &&
         request.resource.data.status is string &&
         request.resource.data.createdAt is timestamp &&
         request.resource.data.name.size() > 1 &&
         request.resource.data.phone.size() > 5 &&
         request.resource.data.email.size() > 5 &&
+        request.resource.data.preferredContact in ["Call", "WhatsApp", "Email"] &&
         request.resource.data.farmLocation.size() > 1 &&
         request.resource.data.message.size() > 5;
 

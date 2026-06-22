@@ -5,18 +5,13 @@ service firebase.storage {
       return request.auth != null;
     }
 
-    function isAdmin() {
-      return signedIn() &&
-        firestore.exists(/databases/(default)/documents/admins/$(request.auth.uid));
-    }
-
     match /site-assets/{slotId}/{fileName} {
       allow read: if true;
-      allow create, update: if isAdmin() &&
+      allow create, update: if signedIn() &&
         request.resource != null &&
         request.resource.size < 10 * 1024 * 1024 &&
         request.resource.contentType.matches('image/.*');
-      allow delete: if isAdmin();
+      allow delete: if signedIn();
     }
   }
 }

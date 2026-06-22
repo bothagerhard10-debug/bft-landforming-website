@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Top-down tractor placeholder</title>
+  <desc id="desc">Placeholder graphic for the aerial tractor and scraper image.</desc>
+  <rect width="1600" height="900" fill="#705e52" />
+  <path d="M690 0h220v900H690z" fill="#d8c7b2" fill-opacity=".18" />
+  <rect x="680" y="140" width="240" height="200" rx="40" fill="#d32f2f" />
+  <rect x="700" y="360" width="200" height="170" rx="30" fill="#d32f2f" />
+  <rect x="765" y="530" width="40" height="220" rx="18" fill="#2a2a2a" />
+  <rect x="680" y="760" width="240" height="60" rx="20" fill="#b7ac9c" />
+  <circle cx="720" cy="360" r="45" fill="#222222" />
+  <circle cx="880" cy="360" r="45" fill="#222222" />
+  <text x="110" y="130" fill="#ffffff" font-family="Oswald, Arial Narrow, sans-serif" font-size="82" font-weight="700">
+    AERIAL WORKING VIEW
+  </text>
+  <text x="110" y="210" fill="#ffffff" font-family="Barlow, Arial, sans-serif" font-size="34">
+    Replace with uploaded top-down machinery photo
+  </text>
+</svg>

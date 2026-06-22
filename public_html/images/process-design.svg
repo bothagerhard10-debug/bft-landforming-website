@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Design process placeholder</title>
+  <desc id="desc">Placeholder graphic for the design step image.</desc>
+  <rect width="1600" height="900" fill="#c3aa95" />
+  <rect x="340" y="260" width="920" height="520" rx="34" fill="#4e4e4e" />
+  <rect x="410" y="320" width="780" height="370" rx="16" fill="#1d1d1d" />
+  <rect x="540" y="370" width="180" height="250" fill="#8bc34a" />
+  <rect x="720" y="370" width="180" height="250" fill="#f4c542" />
+  <rect x="900" y="370" width="180" height="250" fill="#5da8ff" />
+  <rect x="520" y="780" width="560" height="40" rx="20" fill="#d7d7d7" />
+  <text x="110" y="130" fill="#ffffff" font-family="Oswald, Arial Narrow, sans-serif" font-size="82" font-weight="700">
+    STEP 2: CREATE DESIGN
+  </text>
+  <text x="110" y="210" fill="#ffffff" font-family="Barlow, Arial, sans-serif" font-size="34">
+    Replace with uploaded design laptop photo
+  </text>
+</svg>

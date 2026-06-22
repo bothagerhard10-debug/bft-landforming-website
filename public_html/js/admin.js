@@ -881,7 +881,7 @@ if (!isFirebaseConfigured || !auth || !db || !storage) {
   showDashboard(false);
   setMessage(
     loginStatus,
-    "Add your Firebase web config in assets/js/firebase-config.js before using the admin panel.",
+    "Add your Firebase web config in js/firebase-config.js before using the admin panel.",
     "is-error"
   );
 } else {

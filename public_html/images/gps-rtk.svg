@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">RTK GPS placeholder</title>
+  <desc id="desc">Placeholder graphic for the RTK GPS close-up image.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c7dbef" />
+      <stop offset="100%" stop-color="#87a9c8" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)" />
+  <rect y="560" width="1600" height="340" fill="#a5875e" />
+  <rect x="610" y="260" width="300" height="310" rx="40" fill="#2a2726" />
+  <ellipse cx="760" cy="240" rx="240" ry="70" fill="#f2efe8" />
+  <rect x="555" y="330" width="410" height="70" rx="30" fill="#c7bda9" />
+  <text x="110" y="130" fill="#111111" font-family="Oswald, Arial Narrow, sans-serif" font-size="90" font-weight="700">
+    RTK GPS
+  </text>
+  <text x="110" y="215" fill="#111111" font-family="Barlow, Arial, sans-serif" font-size="34">
+    Replace with uploaded GPS close-up photo
+  </text>
+  <text x="110" y="770" fill="#ffffff" font-family="Oswald, Arial Narrow, sans-serif" font-size="70" font-weight="700">
+    ±2CM ACCURACY
+  </text>
+</svg>

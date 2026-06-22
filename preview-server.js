@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 const port = 4173;
-const root = __dirname;
+const root = path.join(__dirname, "public_html");
 
 const contentTypes = {
   ".html": "text/html; charset=utf-8",
@@ -21,8 +21,22 @@ const contentTypes = {
 
 const server = http.createServer((request, response) => {
   const requestPath = decodeURIComponent((request.url || "/").split("?")[0]);
-  const normalizedPath = requestPath === "/" ? "/index.html" : requestPath;
-  const filePath = path.normalize(path.join(root, normalizedPath));
+  const requestedPaths =
+    requestPath === "/"
+      ? ["/index.html"]
+      : [requestPath, `${requestPath}.html`];
+
+  const filePath = requestedPaths
+    .map((candidate) => path.normalize(path.join(root, candidate)))
+    .find((candidate) => {
+      return candidate.startsWith(root) && fs.existsSync(candidate) && fs.statSync(candidate).isFile();
+    });
+
+  if (!filePath) {
+    response.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
+    response.end("Not found");
+    return;
+  }
 
   if (!filePath.startsWith(root)) {
     response.writeHead(403, { "Content-Type": "text/plain; charset=utf-8" });

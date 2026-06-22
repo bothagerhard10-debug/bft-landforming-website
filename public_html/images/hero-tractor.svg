@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hero tractor placeholder</title>
+  <desc id="desc">Placeholder graphic for the main tractor with scraper hero image.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1a1a" />
+      <stop offset="100%" stop-color="#5a1a1a" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <rect y="640" width="1600" height="260" fill="#a88d69" />
+  <rect x="220" y="420" width="450" height="120" rx="20" fill="#d32f2f" />
+  <circle cx="340" cy="610" r="90" fill="#0f0f0f" />
+  <circle cx="590" cy="610" r="90" fill="#0f0f0f" />
+  <rect x="610" y="515" width="420" height="55" rx="20" fill="#b7ab95" />
+  <rect x="1000" y="485" width="190" height="90" rx="18" fill="#cbc0af" />
+  <rect x="1090" y="565" width="210" height="24" rx="12" fill="#2a2a2a" />
+  <text x="110" y="150" fill="#ffffff" font-family="Oswald, Arial Narrow, sans-serif" font-size="86" font-weight="700">
+    BFT BOERDERY LANDFORMING
+  </text>
+  <text x="110" y="235" fill="#ffffff" font-family="Barlow, Arial, sans-serif" font-size="34">
+    Replace with uploaded tractor hero photo
+  </text>
+</svg>

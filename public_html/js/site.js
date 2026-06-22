@@ -280,7 +280,7 @@ if (processTabs) {
         "We first look at the field problem, irrigation goal, access, crop use, and where the water is currently causing trouble.",
       note: "Useful from you: field size, location pin, photos, and the main water issue.",
       mediaSlot: "landformingProcessAssess",
-      image: "assets/images/process-survey.svg",
+      image: "images/process-survey.svg",
       alt: "Survey image for landforming planning"
     },
     survey: {
@@ -290,7 +290,7 @@ if (processTabs) {
         "We measure the field surface so the design is based on real levels, not guesswork. This shows high spots, low spots, and current fall.",
       note: "You get: a clearer picture of where water is trapped or moving too fast.",
       mediaSlot: "landformingProcessSurvey",
-      image: "assets/images/gps-rtk.svg",
+      image: "images/gps-rtk.svg",
       alt: "RTK GPS equipment for field survey"
     },
     design: {
@@ -300,7 +300,7 @@ if (processTabs) {
         "The design works with the natural shape where possible and targets the cut and fill needed to improve water flow.",
       note: "Goal: move less soil while still giving the water a planned route.",
       mediaSlot: "landformingProcessDesign",
-      image: "assets/images/process-design.svg",
+      image: "images/process-design.svg",
       alt: "Design stage using field software"
     },
     earthwork: {
@@ -310,7 +310,7 @@ if (processTabs) {
         "We follow the design with RTK guidance and controlled scraper work so the finished surface stays close to plan.",
       note: "This is where machine control and practical field output both matter.",
       mediaSlot: "landformingProcessEarthwork",
-      image: "assets/images/scraper-action.svg",
+      image: "images/scraper-action.svg",
       alt: "Scraper moving soil during landforming"
     },
     finish: {
@@ -320,7 +320,7 @@ if (processTabs) {
         "We check the finished surface against the goal: better water movement, fewer problem areas, and a field that is easier to manage.",
       note: "The result must work when the water comes, not only look good on paper.",
       mediaSlot: "landformingProcessFinal",
-      image: "assets/images/process-landform.svg",
+      image: "images/process-landform.svg",
       alt: "Finished landforming process"
     }
   };
